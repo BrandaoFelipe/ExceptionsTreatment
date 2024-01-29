@@ -6,7 +6,8 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        try
+        try //BLOCO TRY DEVE ESTAR ONDE ELE VAI PRECISAR PROCURAR POR EXCESSÕES
+            
         {
             Console.WriteLine("Enter account data");
             Console.Write("Number: ");
@@ -23,6 +24,7 @@ internal class Program
 
             Console.Write("Enter amount for withdraw: ");
             double amount = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+       
             account.Withdraw(amount);
 
             Console.WriteLine(account);
